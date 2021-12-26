@@ -83,7 +83,7 @@ class ProductInfosController extends AppController
 		];
 
 		foreach ($pluginDatas as $key => $pluginData) {
-			$datas[$key] = ['name' => $key, 'value' => $this->getPluginVersion($pluginDatas, $key)];
+			$datas[$key] = ['name' => '【プラグイン】' . $key . ' バージョン', 'value' => $this->getPluginVersion($pluginDatas, $key)];
 		}
 		return $datas;
 	}
